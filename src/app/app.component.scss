@@ -3,3 +3,25 @@
     justify-content: center;
     align-items: center;
 }
+
+:host {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#contacto {
+    grid-area: contacto;
+    background-color: #e3f2fd;
+}
+
+#proyectos {
+    grid-area: proyectos;
+    background-color: #e3f2fd;
+}

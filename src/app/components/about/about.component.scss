@@ -1,0 +1,41 @@
+:host {
+    padding: 1rem 3rem;
+    margin: 1rem;
+    border-radius: 10rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    font-weight: 300;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+
+    img {
+        width: 8rem;
+        border-radius: 10rem;
+    }
+
+    p {
+        width: 25rem;
+    }
+}
+
+tr {
+    td:first-child {
+      font-weight: bold;
+      text-align: end;
+    }
+    td {
+        padding: 0 .3rem;
+    }
+}
