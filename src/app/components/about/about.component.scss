@@ -1,34 +1,6 @@
-// :host {
-//     padding: 1rem 3rem;
-//     margin: 1rem;
-//     border-radius: 10rem;
-//     width: 40%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// h4 {
-//     font-weight: 300;
-// }
-
-// .profile-pic {
-//     width: 8rem;
-//     border-radius: 10rem;
-// }
-
-// .info {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 2rem;
-//     margin-bottom: 1rem;
-
-//     p {
-//         width: 25rem;
-//     }
-// }
+#hero-text {
+  font-size: 1vw;
+}
 
 tr {
     td:first-child {
@@ -38,4 +10,17 @@ tr {
     td {
         padding: 0 .3rem;
     }
+}
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+  #hero-text {
+    font-size: 1.2vw;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 30px */
+@media (max-width: 1199.98px) {
+  #hero-text {
+    font-size: 16px;
+  }
 }
