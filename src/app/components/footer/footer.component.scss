@@ -16,4 +16,16 @@
     gap: 1rem;
     align-items: center;
     justify-content: center;
+
+    .footer-links {
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+            color: rgb(53, 53, 53);
+        }
+    }
 }

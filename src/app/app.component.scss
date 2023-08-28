@@ -13,13 +13,16 @@ main {
 }
 
 #about {
-    background-color: #e3f2fd;
+    backdrop-filter: blur(8px);
+    background-color: #e3f2fd79;
 }
 
 #proyectos {
-    background-color: #e3f2fd;
+    backdrop-filter: blur(8px);
+    background-color: #e3f2fd79;
 }
 
 #contacto {
-    background-color: #e3f2fd; 
+    backdrop-filter: blur(8px);
+    background-color: #e3f2fd79; 
 }
