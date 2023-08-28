@@ -18,11 +18,11 @@
             <div class="row"></div>
         </div>
         <div class="col-12 col-md-6">
-            <form [formGroup]="contactoForm" (ngSubmit)="send(contactoForm.value)" class="text-start">
+            <form [formGroup]="contactoForm" (ngSubmit)="send(contactoForm)" class="text-start">
                 <div class="row mb-2">
                     <div class="col-md col-12">
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" class="form-control" placeholder="Nombre" formControlName="nombre">
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre" formControlName="nombre" required>
                     </div>
                     <div class="col">
                         <label for="apellidos">Apellidos</label>
@@ -31,14 +31,14 @@
                 </div>
                 <div class="form-group mb-2">
                     <label for="correo-electronico">Correo electrónico</label>
-                    <input type="email" class="form-control" id="correo-electronico" placeholder="correo@ejemplo.com" formControlName="mandatario">
+                    <input type="email" class="form-control" id="correo-electronico" placeholder="correo@ejemplo.com" formControlName="mandatario" required>
                 </div>
                 <div class="form-group mb-3">
                     <label for="texto">Deja un mensaje</label>
-                    <textarea class="form-control" id="texto" rows="3" placeholder="Escribe aquí..." formControlName="mensaje"></textarea>
+                    <textarea class="form-control" id="texto" rows="3" placeholder="Escribe aquí..." formControlName="mensaje" required></textarea>
                 </div>
                 <div class="col">
-                    <button type="submit" class="w-100 btn btn-light">Enviar</button>
+                    <button type="submit" class="w-100 btn btn-primary" [disabled]="!contactoForm.valid">Enviar</button>
                 </div>
             </form>
         </div>
