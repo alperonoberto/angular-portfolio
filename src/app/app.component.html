@@ -1,9 +1,12 @@
+<!-- eslint-disable prettier/prettier -->
 <app-navbar id="navbar"></app-navbar>
 <main>
   <app-about id="about" class="rounded py-4"></app-about>
   <app-proyectos id="proyectos" class="rounded py-4 my-4"></app-proyectos>
   <app-contacto id="contacto" class="rounded p-4 mb-4"></app-contacto>
+  <button type="button" id="return-top" class="btn btn-lg btn-info" (click)="scrollToTop()">^</button>
 </main>
+<!-- [ngClass]="isScrolled?'d-block':'d-none'" -->
 <app-footer></app-footer>
 
 <router-outlet></router-outlet>

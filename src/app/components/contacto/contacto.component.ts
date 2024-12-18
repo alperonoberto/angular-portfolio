@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import emailjs from '@emailjs/browser';
@@ -12,6 +13,7 @@ import {
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.scss'],
 })
+// eslint-disable-next-line prettier/prettier
 export class ContactoComponent {
   constructor() {}
 
